@@ -1,0 +1,321 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(Foto/solntsevo-1880124_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+                /* Registration */
+
+.Registration{
+    width: 25%;
+    height: 650px;
+    position: absolute;
+    right: 0;
+    top: 17%;
+    background-color: transparent;
+    display: flex;
+    overflow: hidden;  
+   
+}
+
+.scroll{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    right: -650px;
+    transition: right 0.5s ease; 
+    background-color: rgba(0, 0, 0, 0.753);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    z-index: 3;
+}
+.regContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.regContainer h2{
+     margin-bottom: 10%;
+     color: white;
+     font-weight: 400;
+}
+.forms{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms label{
+    width: 90%;
+    height: 10%;
+    color: white;
+    margin-bottom: -3%;
+    font-size: 20px;
+}
+
+.forms input{
+    width: 90%;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+#regResultOutput{
+    width: 90%;
+    height: 30px;
+    font-size: 20px;
+    color: red;
+}
+
+#registerButton{
+    width: 60%;
+    height: 36px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+#registerCloseButton{
+    width: 60%;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-top: 15px;
+    cursor: pointer;
+    color: white;
+}
+
+
+    
+
+
+                    /* LOGIN */
+.Logn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.LoginContainer{
+    width: 25%;
+    height: 36%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    border: 2px solid silver;
+    border-radius: 15px;   
+    background-color: rgba(0, 0, 0, 0.562);
+    box-shadow: 0 0px 48px rgba(128, 128, 128, .8);
+   
+}
+
+.LoginContainer h2{
+    margin-bottom: 5%;
+    font-size: 33px;
+    font-weight: 550;
+    color: white;
+}
+
+input{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    border: 1px solid silver;
+    box-shadow: 0 0px 15px rgba(128, 128, 128, .8);
+    background-color: transparent;
+    margin: 10px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.LoginContainer button{
+    width: 50%;
+    height: 10%;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid silver;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(128,128,128, .8);
+}
+
+.LoginContainer button:hover{
+    border-radius: 10px;
+    height: 12%;
+    width: 52%
+}
+
+.LoginContainer button:active{
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+}
+
+
+#loginResultOutput{
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    color: red;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#adminClearButton{
+    width: 15%;
+    height: 3%;
+    margin-top: 10px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#adminClearButton:hover{
+    width: 16%;
+    height: 4%;
+    border-radius: 10px;
+}
+
+@media(max-width:450px){
+
+
+
+                /* Registration */
+
+.Registration{
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    right: 0;
+    top: 17%;
+    background-color: transparent;
+    display: flex;
+    overflow: hidden;  
+}
+
+.scroll{
+    z-index: 3;
+    position: absolute;
+}
+
+
+
+                      /* LOGIN */
+.Logn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+}
+
+.LoginContainer{
+    width: 95%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    border: 2px solid silver;
+    border-radius: 15px;   
+    background-color: rgba(0, 0, 0, 0.562);
+    box-shadow: 0 0px 48px rgba(128, 128, 128, .8);
+   
+}
+
+.LoginContainer h2{
+    margin-bottom: 5%;
+    font-size: 33px;
+    font-weight: 550;
+    color: white;
+}
+
+input{
+    width: 80%;
+    height: 10%;
+    border-radius: 10px;
+    border: 1px solid silver;
+    box-shadow: 0 0px 15px rgba(128, 128, 128, .8);
+    background-color: transparent;
+    margin: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.LoginContainer button{
+    width: 70%;
+    height: 10%;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid silver;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(128,128,128, .8);
+}
+
+#loginResultOutput{
+    text-align: center;
+    width: 100%;
+    height: 25px;
+    color: red;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#adminClearButton{
+    width: 60%;
+    height: 4%;
+    margin-top: 10px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+#adminClearButton:hover{
+    width: 66%;
+    height: 7%;
+    border-radius: 10px;
+}
+
+}

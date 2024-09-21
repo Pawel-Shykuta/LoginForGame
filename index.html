@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Content oly 18+</title>
+        <meta name="description" content="LoginPrankWindow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>  
+        <section class="Registration">
+            <div class="scroll">
+                <div class="regContainer">
+                    <h2>Регистрация</h2>
+                    <div class="forms">
+                        <label for="email">Введите Email</label>
+                        <input type="email" name="email" id="reguserEmail" autocomplete="off" class="InputsLine">
+        
+                        <label for="name">Введите имя пользователя</label>
+                        <input type="text" name="name" id="regUsername" autocomplete="off" class="InputsLine">
+        
+                        <label for="password">Введите пароль</label>
+                        <input type="password" name="password" id="regPassword" autocomplete="off" class="InputsLine">
+        
+                        <label for="regPassword">Подтвердите пароль</label>
+                        <input type="password" name="regPassword" id="regRePassword" autocomplete="off" class="InputsLine">
+        
+                        <label for="phone">Введите номер телефона</label>
+                        <input type="tel" name="phone" id="regPhoneNumber" autocomplete="off" class="InputsLine">
+                        <div id="regResultOutput"></div>
+                        
+                        <button id="registerButton" class="StyleBtn" >Регистрация</button>
+                    </div>
+                   
+                   <button id="registerCloseButton" class="StyleBtn" onclick="Moove()">Close</button>
+                </div>
+                
+            </div> 
+        </section>   
+        <section class="Logn">
+            <div class="LoginContainer">
+                <h2>Вход</h2>
+                <input type="text" id="loginUsername" placeholder="Введите имя пользователя" class="InputsLineLog">
+                <input type="password" id="loginPassword" placeholder="Введите пароль" class="InputsLineLog">
+                <div id="loginResultOutput"></div>
+                <button id="loginButton">Вход</button>
+                <button id="btn" onclick="Moove()">Регистрация</button>
+            </div>
+            <button id="adminClearButton">Очистить всех пользователей</button>
+        </section>
+            <!-- Кнопка для удаления всех пользователей, доступная только администратору -->
+            
+
+        <script src="Logick.js" async defer></script>
+    </body>
+</html>
